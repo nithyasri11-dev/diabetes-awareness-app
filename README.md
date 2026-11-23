@@ -1,132 +1,150 @@
-# 💙 Diabetes Awareness
-### An Explainable Machine Learning-Based Health Assessment and Awareness Platform
+# 🩺 Diabetes Awareness – Explainable Machine Learning-Based Health Assessment Platform
+
+An interactive health awareness platform built using Python, Streamlit, and Machine Learning. The application provides a diabetes-related health assessment, visual analytics, Explainable AI insights, and health awareness activities.
+
+## 🌐 Live Demo
+
+🚀 **Try the application here:**
+
+[Diabetes Awareness – Live App](https://diabetes-awareness-app-rr5vjrpxuvomwbtypq3fna.streamlit.app/)
 
 ## 📌 Project Overview
 
-Diabetes Awareness is an interactive HealthTech web application developed using Python and Streamlit. The project combines Machine Learning, Explainable Artificial Intelligence (XAI), Predictive Analytics and health education to make diabetes-related health information easier to understand.
+Diabetes is a major public health concern. Early awareness of health indicators and healthy lifestyle choices can support better health management.
 
-The application allows users to enter health and lifestyle information, explore machine-learning model outputs, understand feature importance, interact with an educational chatbot and maintain their assessment history.
+The **Diabetes Awareness Platform** is designed to help users explore diabetes-related health indicators through a machine learning-based assessment. It also provides understandable insights into model predictions and encourages healthy habits through interactive awareness activities.
 
-The primary objective is to provide an accessible health-awareness platform that combines technical intelligence with educational support.
-
-**Note:** This project is an educational prototype and is not a medical diagnostic system.
+This project was developed as a HealthTech solution to promote health awareness through technology.
 
 ## 🎯 Objectives
 
-- Develop an interactive diabetes health-awareness platform.
-- Integrate a trained machine-learning classification model.
-- Improve model interpretability using Explainable AI.
-- Visualise machine-learning performance metrics.
-- Provide bilingual health education in English and Tamil.
-- Encourage healthy habits through interactive quizzes and challenges.
-- Maintain individual assessment records.
+- Develop a machine learning-based diabetes health assessment application.
+- Make model predictions easier to understand using Explainable AI.
+- Present health-related information through interactive dashboards.
+- Promote diabetes awareness and healthy lifestyle habits.
+- Provide an accessible and interactive user experience.
 
 ## ✨ Key Features
 
-### 1. Machine Learning-Based Health Assessment
-Collects demographic, lifestyle and health-related information and generates a model classification and positive-class score when supported by the model.
+### 1. 👤 User Authentication
+- User registration and login.
+- Individual user access to the application.
 
-### 2. Explainable AI
-Uses Permutation Feature Importance to identify which features influence the model's overall performance.
+### 2. 📊 Interactive Dashboard
+- Visual representation of health-related information.
+- Interactive charts and analytics.
+- Easy-to-understand dashboard interface.
 
-### 3. Predictive Analytics
-Displays model evaluation metrics such as:
+### 3. 🩺 Diabetes Health Assessment
+- Collects health-related information such as BMI, blood pressure, physical activity, and lifestyle indicators.
+- Uses a trained machine learning model to generate an assessment.
+- Displays the predicted class based on the model.
+
+### 4. 🤖 Explainable AI
+- Uses Permutation Feature Importance to explain model behaviour.
+- Highlights which input features influence model predictions.
+- Helps users better understand machine learning results.
+
+### 5. 📈 Predictive Model Analytics
+Model performance is presented using evaluation metrics such as:
 - Accuracy
 - Precision
 - Recall
 - F1-score
-- ROC-AUC
+- ROC-AUC, where available
 
-### 4. Bilingual Health Chatbot
-Provides general diabetes-awareness information in English and Tamil.
+### 6. 💬 Bilingual Chatbot
+- Interactive diabetes awareness chatbot.
+- Supports English and Tamil.
+- Provides general health awareness information.
 
-### 5. Diabetes Prevention Quest
-Includes interactive health quizzes, daily wellness challenges, points and achievements.
+### 7. 🎮 Prevention Quest
+- Interactive health awareness quizzes.
+- Lifestyle-related challenges.
+- Encourages healthy habits through learning activities.
 
-### 6. Personal Assessment History
-Allows users to view their previously saved health assessment records.
+### 8. 📂 Assessment History
+- Allows users to review their previous assessment records.
 
-### 7. Health Report
-Provides a record-management foundation for reviewing assessment information. PDF reporting can be enabled when the PDF-generation implementation is included in the deployed application.
-
-### 8. Dark Mode Interface
-Provides a dark-themed interface with a navy background, teal highlights and readable text.
+### 9. 🌙 Dark Theme
+- Dark-themed application interface.
+- Designed for a comfortable viewing experience.
 
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
 |---|---|
-| Python | Main programming language |
-| Streamlit | Web application framework |
-| Scikit-learn | Machine learning and feature importance |
-| Pandas | Data processing |
-| NumPy | Numerical operations |
-| Joblib | Model loading |
-| Plotly | Interactive visualisations |
-| ReportLab | PDF generation support in the updated implementation |
-| GitHub | Version control and project hosting |
+| Python | Core programming language |
+| Streamlit | Web application development |
+| Scikit-learn | Machine learning |
+| Pandas | Data manipulation |
+| NumPy | Numerical computing |
+| Plotly | Interactive visualizations |
+| Joblib | Model loading and storage |
+| Argon2 | Password hashing support |
+| ReportLab | PDF-related dependency |
 
-## 📊 Dataset
+## 🧠 Machine Learning Approach
 
-The project uses the CDC Diabetes Health Indicators dataset distributed through the UCI Machine Learning Repository.
+The application uses a trained machine learning model with health-related input features.
 
-The dataset contains health and lifestyle indicators associated with diabetes-related status.
+The model produces a binary class prediction:
 
-Some of the features used in the application include:
+- **Class 0**
+- **Class 1**
 
-- Age
-- BMI
-- High blood pressure history
-- High cholesterol history
-- Smoking history
-- Physical activity
-- Fruit consumption
-- Vegetable consumption
-- General health
-- Physical health
+Permutation Feature Importance is used to help explain the influence of input features on model behaviour.
 
-The model produces Class 0 or Class 1 outputs. These do not distinguish Type 1 from Type 2 diabetes.
+The prediction is based on the model and dataset used in this project. It should not be interpreted as a medical diagnosis or a prediction of future diabetes onset.
 
-## 🧠 Explainable AI Methodology
+## 📚 Dataset
 
-The application uses Permutation Feature Importance.
+The project uses the **CDC Diabetes Health Indicators** dataset.
 
-This method evaluates the change in model performance when the values of an individual feature are randomly shuffled.
+The dataset contains health-related indicators, including demographic, medical history, and lifestyle information.
 
-Features that cause a greater reduction in performance when shuffled may be more important to the model's predictions.
+These indicators are used for model development and health assessment.
 
-The application presents feature-importance comparisons and visualisations to improve understanding of model behaviour.
+## 📸 Project Screenshots
 
-These explanations do not establish causation or represent individual medical risk.
+### Login Page
+![Login Page](screenshots/login.png)
 
-## ⚙️ Installation and Execution
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
 
-### Prerequisites
+### Health Assessment
+![Health Assessment](screenshots/assessment.png)
 
-- Python 3.10 or compatible version
-- Visual Studio Code
-- Git
-- Required project files and trained model artifacts
+### Explainable AI
+![Explainable AI](screenshots/explainable-ai.png)
 
-### Step 1: Clone the Repository
+### Chatbot
+![Chatbot](screenshots/chatbot.png)
+
+## 💻 Run the Project Locally
+
+Follow these steps to run the application on your computer.
+
+### Step 1: Clone the repository
 
 ```bash
 git clone https://github.com/nithyasri11-dev/diabetes-awareness-app.git
 ```
 
-### Step 2: Navigate to the Project Folder
+### Step 2: Open the project folder
 
 ```bash
 cd diabetes-awareness-app
 ```
 
-### Step 3: Create a Virtual Environment
+### Step 3: Create a virtual environment
 
 ```bash
 python -m venv .venv
 ```
 
-### Step 4: Activate the Environment
+### Step 4: Activate the virtual environment
 
 For Windows PowerShell:
 
@@ -134,19 +152,19 @@ For Windows PowerShell:
 .venv\Scripts\Activate.ps1
 ```
 
-### Step 5: Install Dependencies
+### Step 5: Install the required packages
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-### Step 6: Run the Application
+### Step 6: Run the Streamlit application
 
 ```bash
 python -m streamlit run app.py
 ```
 
-Open the local URL displayed in the terminal, usually:
+Open the local application in your browser:
 
 ```text
 http://localhost:8501
@@ -160,10 +178,6 @@ diabetes-awareness-app/
 ├── app.py
 ├── requirements.txt
 ├── download_uci.py
-├── .gitignore
-│
-├── .streamlit/
-│   └── config.toml
 │
 ├── data/
 │   └── diabetes_health_indicators.csv
@@ -174,38 +188,58 @@ diabetes-awareness-app/
 │   └── model_comparison.csv
 │
 ├── modules/
+│   ├── analytics.py
+│   ├── authentication.py
+│   ├── chatbot.py
+│   ├── explainable_ai.py
+│   └── prevention_game.py
 │
-└── user_records/
+├── screenshots/
+│   ├── login.png
+│   ├── dashboard.png
+│   ├── assessment.png
+│   ├── explainable-ai.png
+│   └── chatbot.png
+│
+├── .streamlit/
+│   └── config.toml
+│
+└── README.md
 ```
 
-The actual contents of the data, models and modules folders depend on the files included in the repository.
+*Note: The exact files and folders may vary depending on the version of the project.*
 
-## 🔒 Limitations and Responsible Use
+## ⚠️ Disclaimer and Limitations
 
-- The application is intended for educational awareness.
-- Model outputs are not medical diagnoses.
-- Class 0 and Class 1 do not represent Type 1 and Type 2 diabetes.
-- The displayed model score is not necessarily a calibrated probability of future diabetes.
-- The source dataset is based on US survey information and may not generalise to other populations.
-- Health assessment records should be protected using appropriate security and persistent-storage mechanisms.
-
-Users should consult qualified healthcare professionals for medical screening and advice.
+- This application is developed for educational, research, and health awareness purposes.
+- It is not a medical diagnostic tool.
+- Model predictions are not a substitute for professional medical advice.
+- The binary output represents the classes learned by the model; it does not distinguish Type 1 and Type 2 diabetes.
+- Model performance depends on the dataset and training methodology.
+- The application should undergo further validation, privacy, and security improvements before any real-world clinical use.
+- Users should consult qualified healthcare professionals for medical concerns.
 
 ## 🚀 Future Enhancements
 
-- Integration of SHAP for individual prediction explanations.
-- Improved model validation and calibration.
-- Secure database integration.
-- Enhanced Tamil chatbot capabilities.
-- More comprehensive PDF reporting.
-- Improved assessment-history visualisations.
-- User experience testing and evaluation.
+- Improve machine learning model performance through further evaluation.
+- Integrate additional Explainable AI techniques such as SHAP.
+- Add more regional language support.
+- Improve accessibility and mobile responsiveness.
+- Strengthen data privacy and security.
+- Explore integration with healthcare and fitness platforms.
 
-## 👩‍💻 Project Repository
+## 👩‍💻 Developed By
 
-**GitHub:**  
-https://github.com/nithyasri11-dev/diabetes-awareness-app
+**Project:** Diabetes Awareness – Explainable Machine Learning-Based Health Assessment Platform
+
+**GitHub Repository:**  
+[https://github.com/nithyasri11-dev/diabetes-awareness-app](https://github.com/nithyasri11-dev/diabetes-awareness-app)
+
+**Live Application:**  
+[Open Diabetes Awareness App](https://diabetes-awareness-app-rr5vjrpxuvomwbtypq3fna.streamlit.app/)
 
 ---
 
-*Developed as a HealthTech educational project focused on diabetes awareness, explainable machine learning and interactive health education.*
+⭐ If you find this project useful, consider giving the repository a star!
+
+**Built with Python, Machine Learning, and Streamlit.**
